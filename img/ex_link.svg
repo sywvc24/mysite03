@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <style>
+        .st0 {
+            fill: #730f0e
+        }
+
+    </style>
+    <path class="st0" d="M96 0v416h416V0H96zm376 376H136V40h336v336z" />
+    <path class="st0" d="M40 472V96H0v416h416v-40h-40z" />
+    <path class="st0" d="M232.812 312.829l117.859-117.86v84.797h40V126.688H237.594v40h84.796L204.531 284.547z" />
+</svg>

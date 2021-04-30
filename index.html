@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>喫茶ソラハナ</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="robots" content="noindex, nofollow" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Damion&family=Libre+Baskerville&family=Noto+Serif+JP&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="css/style.min.css" rel="stylesheet" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js"
+			defer
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+			defer
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js"
+			defer
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+			defer
+		></script>
+		<script src="js/script.min.js" defer></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js"
+			defer
+		></script>
+	</head>
+	<body>
+		<div class="loader">
+			<div class="loading-inner">
+				<img src="img/loader.svg" alt="" />
+			</div>
+		</div>
+		<div class="wrapper">
+			<header>
+				<div class="inner">
+					<h1 class="logo">
+						<img src="img/logo.png" alt="" />
+					</h1>
+					<nav class="global-nav">
+						<div class="nav-inner">
+							<ul id="indexList">
+								<li>
+									<a href="#about" data-scroll class="en pc-hover">ABOUT</a>
+								</li>
+								<li>
+									<a href="#menu" data-scroll class="en pc-hover">MENU</a>
+								</li>
+								<li>
+									<a href="#news" data-scroll class="en pc-hover">NEWS</a>
+								</li>
+								<li>
+									<a href="#access" data-scroll class="en pc-hover">ACCESS</a>
+								</li>
+								<li class="sns-block">
+									<ul>
+										<li>
+											<a href=""><img src="img/twitter.svg" alt="twitter" /></a>
+										</li>
+										<li>
+											<a href=""
+												><img src="img/instagram.svg" alt="instagram"
+											/></a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</nav>
+					<div class="hamburger sp-only" id="js-hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="black-bg" id="js-black-bg"></div>
+				</div>
+			</header>
+
+			<main>
+				<div id="main-visual">
+					<div id="slider">
+						<div class="slider-inner">
+							<div id="slider-content">
+								<h2 id="slide-title">一歩足を踏み入れると</h2>
+								<span data-slide-title="0">一歩足を踏み入れると</span>
+								<span data-slide-title="1">レトロで</span>
+								<span data-slide-title="2">ゆったりと流れる時間</span>
+								<div id="slide-status">Entrance</div>
+								<span data-slide-status="0">Entrance</span>
+								<span data-slide-status="1">Nostalgia</span>
+								<span data-slide-status="2"
+									>Time goes by slowly and leisurely</span
+								>
+							</div>
+						</div>
+
+						<img src="img/slider01.jpg" alt="" />
+						<img src="img/slider02.jpg" alt="" />
+						<img src="img/slider03.jpg" alt="" />
+
+						<div id="pagination">
+							<button id="btn0" class="active" data-slide="0"></button>
+							<button id="btn1" data-slide="1"></button>
+							<button id="btn2" data-slide="2"></button>
+						</div>
+						<div class="scroll"></div>
+					</div>
+				</div>
+
+				<section id="about">
+					<div class="about-bg"></div>
+					<div class="inner">
+						<div class="aboutImgT invisible waypoint">
+							<img
+								srcset="img/about01_sp.jpg 771w, img/about01_pc.jpg 1344w"
+								sizes="(max-width: 600px) 85vw, 70vw"
+								src="img/about01_pc.jpg"
+								alt="古民家カフェ喫茶ソラハナの外観"
+								class="lazyload"
+								width="1344"
+								height="950"
+							/>
+						</div>
+						<div class="txt-box">
+							<h2 class="ttl en">ABOUT US</h2>
+							<div class="lead matrix waypoint">
+								<h3 class="bg-wrap">
+									<span class="inn">レトロで落ち着く癒しの古民家カフェ</span>
+								</h3>
+							</div>
+							<div class="fade-txt waypoint">
+								<p>昭和初期の古民家を改装した喫茶ソラハナ。</p>
+								<p>
+									レトロで落ち着いた店内は、アンティークな木製家具やインテリアにこだわり、ゆったりとくつろげるように仕切りをすべて取り払い、席の間隔を広めにしています。
+								</p>
+								<p>
+									タイムスリップしたかのような空間では、時の流れもゆっくり流れ行く・・・。
+								</p>
+								<p>都会の喧騒から離れ、癒されるひとときを。</p>
+							</div>
+						</div>
+						<div class="aboutImgB invisible waypoint">
+							<img
+								srcset="img/about02_sp.jpg 771w, img/about02_pc.jpg 1344w"
+								sizes="(max-width: 600px) 85vw, 70vw"
+								src="img/about01_pc.jpg"
+								alt="古民家カフェ喫茶ソラハナの店内"
+								class="lazyload"
+								width="1344"
+								height="950"
+							/>
+						</div>
+					</div>
+				</section>
+
+				<section id="menu" class="section">
+					<div class="inner">
+						<h2 class="ttl en">MENU</h2>
+						<div class="txt-box">
+							<p>
+								昭和レトロな喫茶店メニューと鎌倉野菜を使用したメニューをお出ししています。
+							</p>
+						</div>
+						<div class="l-box">
+							<ul class="menu-list">
+								<li class="invisible waypoint odd-li">
+									<div class="menu-img">
+										<img src="img/menu-coffee.jpg" alt="" class="lazyload" />
+									</div>
+									<div class="menu-txt">
+										<div class="txt-inner">
+											<dl>
+												<dt>
+													<span class="cursive">Coffee</span><br /><span
+														>オリジナルコーヒー</span
+													>
+												</dt>
+												<dd class="small">600円〜</dd>
+												<dd>
+													おもてなしの心を、特別な一杯に乗せて。<br />
+													当店のコーヒーはネルドリップで一杯ずつ丁寧に入れています。
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</li>
+								<li class="invisible waypoint even-li">
+									<div class="menu-img">
+										<img src="img/menu-ga.jpg" alt="" class="lazyload" />
+									</div>
+									<div class="menu-txt">
+										<div class="txt-inner">
+											<dl>
+												<dt>
+													<span class="cursive">Ginger ale</span><br /><span
+														>自家製ジンジャエール</span
+													>
+												</dt>
+												<dd class="small">650円</dd>
+												<dd>
+													生姜と唐辛子やスパイスを煮詰めて作った自家製のシロップで作ります。
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</li>
+								<li class="invisible waypoint odd-li">
+									<div class="menu-img">
+										<img src="img/menu-pudding.jpg" alt="" class="lazyload" />
+									</div>
+									<div class="menu-txt">
+										<div class="txt-inner">
+											<dl>
+												<dt>
+													<span class="cursive">Pudding</span><br /><span
+														>自家製プリン</span
+													>
+												</dt>
+												<dd class="small">450円</dd>
+												<dd>ほろ苦いカラメルの昔懐かしい固めのプリンです。</dd>
+											</dl>
+										</div>
+									</div>
+								</li>
+
+								<li class="invisible waypoint even-li">
+									<div class="menu-img">
+										<img src="img/menu-ft.jpg" alt="" class="lazyload" />
+									</div>
+									<div class="menu-txt">
+										<div class="txt-inner">
+											<dl>
+												<dt>
+													<span class="cursive">French toast</span><br /><span
+														>フレンチトースト</span
+													>
+												</dt>
+												<dd class="small">800円</dd>
+												<dd>
+													卵液、漬け込み時間、焼き方にこだわったとてもシンプルなフレンチトーストです。
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</li>
+								<li class="invisible waypoint odd-li">
+									<div class="menu-img">
+										<img src="img/menu-napoitan.jpg" alt="" class="lazyload" />
+									</div>
+									<div class="menu-txt">
+										<div class="txt-inner">
+											<dl>
+												<dt>
+													<span class="cursive">Spaghetti Napolitana</span
+													><br /><span>ナポリタン</span>
+												</dt>
+												<dd class="small">1,000円</dd>
+												<dd>
+													喫茶店定番の懐かしい味です。太めのパスタを使って特製のトマトソースとケチャップで仕上げています。
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</li>
+								<li class="invisible waypoint even-li">
+									<div class="menu-img">
+										<img src="img/menu-curry.jpg" alt="" class="lazyload" />
+									</div>
+									<div class="menu-txt">
+										<div class="txt-inner">
+											<dl>
+												<dt>
+													<span class="cursive">Curry</span><br /><span
+														>鎌倉野菜のカレー</span
+													>
+												</dt>
+												<dd class="small">1,200円</dd>
+												<dd>
+													スパイスの辛さは控えめな当店特製カレー。彩り豊かな鎌倉野菜の旨味の優しい味です。
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<a href="" class="btn pc-hover"><span>MENU ALL</span></a>
+					</div>
+				</section>
+
+				<section id="news" class="section">
+					<div class="inner">
+						<h2 class="ttl en">NEWS</h2>
+						<div class="news-block l-box">
+							<article class="news-article invisible waypoint">
+								<a class="pc-hover">
+									<div class="news-thumb">
+										<img
+											src="img/news_01.jpg"
+											alt="4月限定スイーツ"
+											class="lazyload"
+										/>
+									</div>
+									<div class="news-txt">
+										<p class="xs">2021.04.01</p>
+										<h3 class="news-title">4月限定スイーツのご紹介</h3>
+									</div>
+								</a>
+							</article>
+							<article class="news-article invisible waypoint">
+								<a class="pc-hover">
+									<div class="news-thumb">
+										<img
+											src="img/news_02.jpg"
+											alt="新作メニュー"
+											class="lazyload"
+										/>
+									</div>
+									<div class="news-txt">
+										<p class="xs">2021.04.01</p>
+										<h3 class="news-title">
+											4月限定のお食事系メニューのご紹介
+										</h3>
+									</div>
+								</a>
+							</article>
+							<article class="news-article invisible waypoint">
+								<a class="pc-hover">
+									<div class="news-thumb">
+										<img
+											src="img/news_03.jpg"
+											alt="鎌倉の風景写真"
+											class="lazyload"
+										/>
+									</div>
+									<div class="news-txt">
+										<p class="xs">2021.3.17</p>
+										<h3 class="news-title">
+											ギャラリースペースにて写真展開催のお知らせ
+										</h3>
+									</div>
+								</a>
+							</article>
+						</div>
+						<a href="" class="btn pc-hover"><span>NEWS ALL</span></a>
+					</div>
+				</section>
+
+				<section id="access" class="section">
+					<div class="inner">
+						<h2 class="en ttl">ACCESS</h2>
+						<div class="l-box">
+							<div id="map">
+								<div class="map-inner">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3254.742046926467!2d139.54300501520638!3d35.33722658027608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018459ef08efddb%3A0x6abb8788d5dea982!2z5YyX6Y6M5YCJ6aeF!5e0!3m2!1sja!2sjp!4v1619080043742!5m2!1sja!2sjp"
+										width="600"
+										height="450"
+										style="border: 0"
+										allowfullscreen=""
+										loading="lazy"
+									></iframe>
+								</div>
+							</div>
+							<div class="ac-txt-box">
+								<dl class="flx-def small">
+									<div class="line">
+										<dt>ADDRESS</dt>
+										<dd>神奈川県鎌倉市山の上773-9</dd>
+									</div>
+									<div class="line">
+										<dt>TEL</dt>
+										<dd>000-123-4567</dd>
+									</div>
+									<div class="line">
+										<dt>TRAIN</dt>
+										<dd>JR横須賀線「北鎌倉駅」より徒歩5分</dd>
+									</div>
+									<div class="line">
+										<dt>OPEN</dt>
+										<dd>11:30～17:30(L.O. 16:30)</dd>
+									</div>
+									<div class="line">
+										<dt>CLOSED</dt>
+										<dd>金曜日</dd>
+									</div>
+								</dl>
+							</div>
+						</div>
+						<a href="" class="btn pc-hover"
+							>Google Map<img src="img/ex_link.svg" class="icon-link" alt=""
+						/></a>
+					</div>
+				</section>
+			</main>
+
+			<footer>
+				<div class="inner">
+					<div class="l-box">
+						<div class="f-logo logo">
+							<img src="img/logo.png" alt="" />
+						</div>
+						<ul class="f-sns">
+							<li>
+								<a href="" class="pc-hover"
+									><img src="img/twitter.svg" alt=""
+								/></a>
+							</li>
+							<li>
+								<a href="" class="pc-hover"
+									><img src="img/instagram.svg" alt=""
+								/></a>
+							</li>
+						</ul>
+						<p class="en xs copyright">&copy;Sorahana All Rights Reserved.</p>
+					</div>
+					<a href="#top" id="btn-backtotop" class="pc-hover"
+						><span class="arrow_up"></span
+					></a>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
