@@ -24,16 +24,12 @@
 			defer
 		></script>
 		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js"
-			defer
-		></script>
-		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
 			defer
 		></script>
 		<script src="js/script.min.js" defer></script>
 		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js"
+			src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
 			defer
 		></script>
 	</head>
@@ -87,7 +83,6 @@
 					<div class="black-bg" id="js-black-bg"></div>
 				</div>
 			</header>
-
 			<main>
 				<div id="main-visual">
 					<div id="slider">
@@ -105,11 +100,9 @@
 								>
 							</div>
 						</div>
-
 						<img src="img/slider01.jpg" class="mv-img" alt="" />
 						<img src="img/slider02.jpg" class="mv-img" alt="" />
 						<img src="img/slider03.jpg" class="mv-img" alt="" />
-
 						<div id="pagination">
 							<button id="btn0" class="active" data-slide="0"></button>
 							<button id="btn1" data-slide="1"></button>
@@ -118,15 +111,15 @@
 						<div class="scroll"></div>
 					</div>
 				</div>
-
 				<section id="about">
 					<div class="about-bg"></div>
 					<div class="inner">
 						<div class="aboutImgT invisible waypoint">
 							<img
-								srcset="img/about01_sp.jpg 771w, img/about01_pc.jpg 1344w"
+								data-srcset="img/about01_sp.jpg 771w, img/about01_pc.jpg 1344w"
 								sizes="(max-width: 600px) 85vw, 70vw"
-								src="img/about01_pc.jpg"
+								data-src="img/about01_pc.jpg"
+								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
 								alt="古民家カフェ喫茶ソラハナの外観"
 								class="lazyload"
 								width="1344"
@@ -143,19 +136,20 @@
 							<div class="fade-txt waypoint">
 								<p>昭和初期の古民家を改装した喫茶ソラハナ。</p>
 								<p>
-									レトロで落ち着いた店内は、アンティークな木製家具やインテリアにこだわり、ゆったりとくつろげるように仕切りをすべて取り払い、席の間隔を広めにしています。
+									店内は、アンティークな木製家具とインテリアで、ゆったりとくつろげるような落ち着く空間です。
 								</p>
 								<p>
-									タイムスリップしたかのような空間では、時の流れもゆっくり流れ行く・・・。
+									まるでタイムスリップしたかのようで、時の流れもゆっくり流れ行く・・・。
 								</p>
 								<p>都会の喧騒から離れ、癒されるひとときを。</p>
 							</div>
 						</div>
 						<div class="aboutImgB invisible waypoint">
 							<img
-								srcset="img/about02_sp.jpg 771w, img/about02_pc.jpg 1344w"
+								data-srcset="img/about02_sp.jpg 771w, img/about02_pc.jpg 1344w"
 								sizes="(max-width: 600px) 85vw, 70vw"
-								src="img/about01_pc.jpg"
+								data-src="img/about02_pc.jpg"
+								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
 								alt="古民家カフェ喫茶ソラハナの店内"
 								class="lazyload"
 								width="1344"
@@ -164,20 +158,32 @@
 						</div>
 					</div>
 				</section>
-
 				<section id="menu" class="section">
 					<div class="inner">
 						<h2 class="ttl en">MENU</h2>
 						<div class="txt-box">
 							<p>
-								昭和レトロな喫茶店メニューと鎌倉野菜を使用したメニューをお出ししています。
+								コンセプトは、昭和の喫茶店メニューと地元鎌倉野菜を使用したメニューです。
 							</p>
 						</div>
 						<div class="l-box">
 							<ul class="menu-list">
 								<li class="invisible waypoint odd-li">
 									<div class="menu-img">
-										<img src="img/menu-coffee.jpg" alt="" class="lazyload" />
+										<picture>
+											<source
+												type="image/webp"
+												data-srcset="img/menu-coffee.webp"
+											/>
+											<img
+												src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+												data-src="img/menu-coffee.jpg"
+												alt="オリジナルコーヒー"
+												class="lazyload"
+												width="670"
+												height="474"
+											/>
+										</picture>
 									</div>
 									<div class="menu-txt">
 										<div class="txt-inner">
@@ -198,7 +204,20 @@
 								</li>
 								<li class="invisible waypoint even-li">
 									<div class="menu-img">
-										<img src="img/menu-ga.jpg" alt="" class="lazyload" />
+										<picture>
+											<source
+												type="image/webp"
+												data-srcset="img/menu-ga.webp"
+											/>
+											<img
+												src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+												data-src="img/menu-ga.jpg"
+												alt="自家製ジンジャエール"
+												class="lazyload"
+												width="670"
+												height="474"
+											/>
+										</picture>
 									</div>
 									<div class="menu-txt">
 										<div class="txt-inner">
@@ -218,7 +237,20 @@
 								</li>
 								<li class="invisible waypoint odd-li">
 									<div class="menu-img">
-										<img src="img/menu-pudding.jpg" alt="" class="lazyload" />
+										<picture>
+											<source
+												type="image/webp"
+												data-srcset="img/menu-pudding.webp"
+											/>
+											<img
+												src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+												data-src="img/menu-pudding.jpg"
+												alt="自家製プリン"
+												class="lazyload"
+												width="670"
+												height="474"
+											/>
+										</picture>
 									</div>
 									<div class="menu-txt">
 										<div class="txt-inner">
@@ -234,10 +266,22 @@
 										</div>
 									</div>
 								</li>
-
 								<li class="invisible waypoint even-li">
 									<div class="menu-img">
-										<img src="img/menu-ft.jpg" alt="" class="lazyload" />
+										<picture>
+											<source
+												type="image/webp"
+												data-srcset="img/menu-ft.webp"
+											/>
+											<img
+												src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+												data-src="img/menu-ft.jpg"
+												alt="フレンチトースト"
+												class="lazyload"
+												width="670"
+												height="474"
+											/>
+										</picture>
 									</div>
 									<div class="menu-txt">
 										<div class="txt-inner">
@@ -257,7 +301,20 @@
 								</li>
 								<li class="invisible waypoint odd-li">
 									<div class="menu-img">
-										<img src="img/menu-napoitan.jpg" alt="" class="lazyload" />
+										<picture>
+											<source
+												type="image/webp"
+												data-srcset="img/menu-napolitan.webp"
+											/>
+											<img
+												src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+												data-src="img/menu-napolitan.jpg"
+												alt="ナポリタン"
+												class="lazyload"
+												width="670"
+												height="474"
+											/>
+										</picture>
 									</div>
 									<div class="menu-txt">
 										<div class="txt-inner">
@@ -276,7 +333,20 @@
 								</li>
 								<li class="invisible waypoint even-li">
 									<div class="menu-img">
-										<img src="img/menu-curry.jpg" alt="" class="lazyload" />
+										<picture>
+											<source
+												type="image/webp"
+												data-srcset="img/menu-curry.webp"
+											/>
+											<img
+												src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+												data-src="img/menu-curry.jpg"
+												alt="鎌倉野菜のカレー"
+												class="lazyload"
+												width="670"
+												height="474"
+											/>
+										</picture>
 									</div>
 									<div class="menu-txt">
 										<div class="txt-inner">
@@ -299,7 +369,6 @@
 						<a href="" class="btn pc-hover"><span>MENU ALL</span></a>
 					</div>
 				</section>
-
 				<section id="news" class="section">
 					<div class="inner">
 						<h2 class="ttl en">NEWS</h2>
@@ -308,7 +377,8 @@
 								<a class="pc-hover">
 									<div class="news-thumb">
 										<img
-											src="img/news_01.jpg"
+											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											data-src="img/news_01.jpg"
 											alt="4月限定スイーツ"
 											class="lazyload"
 										/>
@@ -323,7 +393,8 @@
 								<a class="pc-hover">
 									<div class="news-thumb">
 										<img
-											src="img/news_02.jpg"
+											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											data-src="img/news_02.jpg"
 											alt="新作メニュー"
 											class="lazyload"
 										/>
@@ -340,7 +411,8 @@
 								<a class="pc-hover">
 									<div class="news-thumb">
 										<img
-											src="img/news_03.jpg"
+											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											data-src="img/news_03.jpg"
 											alt="鎌倉の風景写真"
 											class="lazyload"
 										/>
@@ -357,7 +429,6 @@
 						<a href="" class="btn pc-hover"><span>NEWS ALL</span></a>
 					</div>
 				</section>
-
 				<section id="access" class="section">
 					<div class="inner">
 						<h2 class="en ttl">ACCESS</h2>
@@ -365,12 +436,12 @@
 							<div id="map">
 								<div class="map-inner">
 									<iframe
-										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3254.742046926467!2d139.54300501520638!3d35.33722658027608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018459ef08efddb%3A0x6abb8788d5dea982!2z5YyX6Y6M5YCJ6aeF!5e0!3m2!1sja!2sjp!4v1619080043742!5m2!1sja!2sjp"
+										data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3254.742046926467!2d139.54300501520638!3d35.33722658027608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018459ef08efddb%3A0x6abb8788d5dea982!2z5YyX6Y6M5YCJ6aeF!5e0!3m2!1sja!2sjp!4v1619876344677!5m2!1sja!2sjp"
 										width="600"
 										height="450"
 										style="border: 0"
 										allowfullscreen=""
-										loading="lazy"
+										class="lazyload"
 									></iframe>
 								</div>
 							</div>
@@ -405,7 +476,6 @@
 					</div>
 				</section>
 			</main>
-
 			<footer>
 				<div class="inner">
 					<div class="l-box">
