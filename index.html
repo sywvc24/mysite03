@@ -14,17 +14,15 @@
 			href="https://fonts.googleapis.com/css2?family=Damion&family=Libre+Baskerville&family=Noto+Serif+JP&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.min.css"
+			media="print"
+			onload="this.media='all'"
+		/>
 		<link href="css/style.min.css" rel="stylesheet" />
 		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
-			defer
-		></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
-			defer
-		></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js"
+			src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.min.js"
 			defer
 		></script>
 		<script
@@ -38,7 +36,7 @@
 		></script>
 	</head>
 	<body>
-		<div class="loader">
+		<div class="loader" id="js-loader">
 			<div class="loading-inner">
 				<img src="img/loader.svg" alt="" />
 			</div>
@@ -88,29 +86,39 @@
 				</div>
 			</header>
 			<main>
-				<div id="main-visual">
-					<div id="slider">
-						<div class="slider-inner">
-							<div id="slider-content">
-								<h2 id="slide-title">一歩足を踏み入れると</h2>
-								<span data-slide-title="0">一歩足を踏み入れると</span>
-								<span data-slide-title="1">レトロで</span>
-								<span data-slide-title="2">ゆったりと流れる時間</span>
-								<div id="slide-status">Entrance</div>
-								<span data-slide-status="0">Entrance</span>
-								<span data-slide-status="1">Nostalgia</span>
-								<span data-slide-status="2"
-									>Time goes by slowly and leisurely</span
-								>
+				<div id="mainVisual">
+					<div class="slideshow">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="slide-img">
+										<img src="img/slider01.jpg" alt="" />
+									</div>
+									<div class="slide-content">
+										<h2 class="invisible">一歩足を踏み入れると</h2>
+										<p class="invisible">Entrance</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="slide-img">
+										<img src="img/slider02.jpg" alt="" />
+									</div>
+									<div class="slide-content">
+										<h2 class="invisible">レトロで</h2>
+										<p class="invisible">Nostalgia</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="slide-img">
+										<img src="img/slider03.jpg" alt="" />
+									</div>
+									<div class="slide-content">
+										<h2 class="invisible">ゆったりと流れる時間</h2>
+										<p class="invisible">Time goes by slowly and leisurely</p>
+									</div>
+								</div>
 							</div>
-						</div>
-						<img src="img/slider01.jpg" class="mv-img" alt="" />
-						<img src="img/slider02.jpg" class="mv-img" alt="" />
-						<img src="img/slider03.jpg" class="mv-img" alt="" />
-						<div id="pagination">
-							<button id="btn0" class="active" data-slide="0"></button>
-							<button id="btn1" data-slide="1"></button>
-							<button id="btn2" data-slide="2"></button>
+							<div class="swiper-pagination"></div>
 						</div>
 						<div class="scroll"></div>
 					</div>
@@ -142,9 +150,7 @@
 								<p>
 									店内は、アンティークな木製家具とインテリアで、ゆったりとくつろげるような落ち着く空間です。
 								</p>
-								<p>
-									まるでタイムスリップしたかのようで、時の流れもゆっくり流れ行く・・・。
-								</p>
+								<p>まるでタイムスリップしたかのよう・・・。</p>
 								<p>都会の喧騒から離れ、癒されるひとときを。</p>
 							</div>
 						</div>
