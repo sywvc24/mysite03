@@ -17,9 +17,9 @@
 	<noscript>
 		<link href="https://fonts.googleapis.com/css2?family=Damion&family=Libre+Baskerville&family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
 	</noscript>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.3/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.6/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'" />
 	<link href="css/style.min.css" rel="stylesheet" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.3/swiper-bundle.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.6/swiper-bundle.min.js" defer></script>
 	<script src="js/script.min.js" defer></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" defer></script>
 </head>
@@ -40,29 +40,36 @@
 				</h1>
 				<nav class="global-nav">
 					<div class="nav-inner">
-						<ul id="indexList">
+						<div class="logo menu-logo sp-only"><img src="img/logo.png" alt="喫茶ソラハナ" width="567" height="114" /></div>
+						<ul id="indexList" class="vertical-txt">
 							<li>
-								<a href="#about" data-scroll class="en pc-hover">ABOUT</a>
-							</li>
-							<li>
-								<a href="#menu" data-scroll class="en pc-hover">MENU</a>
+								<a href="#about" data-scroll class="jp pc-hover font-wh">コンセプト</a>
 							</li>
 							<li>
-								<a href="#news" data-scroll class="en pc-hover">NEWS</a>
+								<a href="#menu" data-scroll class="jp pc-hover font-wh">メニュー</a>
 							</li>
 							<li>
-								<a href="#access" data-scroll class="en pc-hover">ACCESS</a>
+								<a href="#news" data-scroll class="jp pc-hover font-wh">ニュース</a>
 							</li>
-							<li class="sns-block">
-								<ul>
-									<li>
-										<a href=""><img src="img/twitter.svg" alt="twitter" /></a>
-									</li>
-									<li>
-										<a href=""><img src="img/instagram.svg" alt="instagram" /></a>
-									</li>
-								</ul>
+							<li>
+								<a href="#access" data-scroll class="jp pc-hover font-wh">アクセス</a>
 							</li>
+						</ul>
+						<div class="sns-block sp-only">
+							<p class="en font-wh">Folllow us!</p>
+							<ul>
+								<li>
+									<a href=""><img src="img/twitter.svg" alt="twitter" /></a>
+								</li>
+								<li>
+									<a href=""><img src="img/instagram.svg" alt="instagram" /></a>
+								</li>
+							</ul>
+						</div>
+						<ul class="gnav-menu-access sp-only font-wh">
+							<li><a href="tel:000-123-4567" class="btn-tel font-wh en">000-123-4567</a></li>
+							<li class="small">営業時間:11:30～17:30(L.O. 16:30)</li>
+							<li class="small">定休日:金曜日</li>
 						</ul>
 					</div>
 				</nav>
@@ -124,13 +131,16 @@
 				<div class="about-bg"></div>
 				<div class="inner">
 					<div class="aboutImgT invisible waypoint">
-						<img data-srcset="img/about01_sp.jpg 771w, img/about01_pc.jpg 1344w" sizes="(max-width: 600px) 85vw, 70vw" data-src="img/about01_pc.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="古民家カフェ喫茶ソラハナの外観" class="lazyload" width="1344" height="950" />
+						<picture>
+							<source type="image/webp" data-srcset="img/about01_sp.webp 771w, img/about01_pc.webp 1344w" sizes="(max-width: 600px) 85vw, 70vw">
+							<img data-srcset="img/about01_sp.jpg 771w, img/about01_pc.jpg 1344w" sizes="(max-width: 600px) 85vw, 70vw" data-src="img/about01_pc.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="古民家カフェ喫茶ソラハナの外観" class="lazyload" width="1344" height="950" />
+						</picture>
 					</div>
 					<div class="txt-box">
-						<h2 class="ttl en">ABOUT</h2>
+						<h2 class="ttl"><span class="jp">コンセプト</span></h2>
 						<div class="lead matrix waypoint">
 							<h3 class="bg-wrap">
-								<span class="inn jp">レトロで落ち着く癒しの古民家カフェ</span>
+								<span class="inn bold">レトロで落ち着く癒しの古民家カフェ</span>
 							</h3>
 						</div>
 						<div class="matrix waypoint">
@@ -144,16 +154,19 @@
 						</div>
 					</div>
 					<div class="aboutImgB invisible waypoint">
-						<img data-srcset="img/about02_sp.jpg 771w, img/about02_pc.jpg 1344w" sizes="(max-width: 600px) 85vw, 70vw" data-src="img/about02_pc.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="古民家カフェ喫茶ソラハナの店内" class="lazyload" width="1344" height="950" />
+						<picture>
+							<source type="image/webp" data-srcset="img/about02_sp.webp 771w, img/about02_pc.webp 1344w" sizes="(max-width: 600px) 85vw, 70vw">
+							<img data-srcset="img/about02_sp.jpg 771w, img/about02_pc.jpg 1344w" sizes="(max-width: 600px) 85vw, 70vw" data-src="img/about02_pc.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="古民家カフェ喫茶ソラハナの店内" class="lazyload" width="1344" height="950" />
+						</picture>
 					</div>
 				</div>
 			</section>
-			<section id="menu" class="section">
+			<section id="menu" class="section menu-news-anim">
 				<div class="inner">
-					<h2 class="ttl en">MENU</h2>
+					<h2 class="ttl"><span class="jp">メニュー</span></h2>
 					<div class="txt-box">
 						<p>
-							コンセプトは、昭和の喫茶店メニューと地元鎌倉野菜を使用したメニューです。
+							昭和レトロな喫茶店メニューと地元鎌倉野菜を使用したメニューです。
 						</p>
 					</div>
 					<div class="l-box">
@@ -285,12 +298,12 @@
 							</li>
 						</ul>
 					</div>
-					<a href="" class="btn pc-hover"><span>MENU ALL</span></a>
+					<a href="" class="btn pc-hover right-arrow"><span class="small">メニュー一覧を見る</span></a>
 				</div>
 			</section>
-			<section id="news" class="section">
+			<section id="news" class="section menu-news-anim">
 				<div class="inner">
-					<h2 class="ttl en">NEWS</h2>
+					<h2 class="ttl"><span class="jp">ニュース</span></h2>
 					<div class="news-block l-box">
 						<article class="img-anim invisible waypoint js-height">
 							<a class="pc-hover">
@@ -326,49 +339,54 @@
 							</a>
 						</article>
 					</div>
-					<a href="" class="btn pc-hover"><span>NEWS ALL</span></a>
+					<a href="" class="btn pc-hover right-arrow"><span class="small">ニュース一覧を見る</span></a>
 				</div>
 			</section>
 			<section id="access" class="section">
 				<div class="inner">
-					<h2 class="en ttl">ACCESS</h2>
+					<h2 class="ttl"><span class="jp">アクセス</span></h2>
 					<div class="l-box">
 						<div id="map">
 							<div class="map-inner">
-								<iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3254.742046926467!2d139.54300501520638!3d35.33722658027608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018459ef08efddb%3A0x6abb8788d5dea982!2z5YyX6Y6M5YCJ6aeF!5e0!3m2!1sja!2sjp!4v1619876344677!5m2!1sja!2sjp" width="600" height="450" style="border: 0" allowfullscreen="" class="lazyload"></iframe>
+								<iframe data-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6509.48406004308!2d139.545194!3d35.337227!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6abb8788d5dea982!2z5YyX6Y6M5YCJ6aeF!5e0!3m2!1sja!2sjp!4v1656080037277!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" class="lazyload" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 						</div>
 						<div class="ac-txt-box">
 							<dl class="flx-def small">
 								<div class="line">
-									<dt>ADDRESS</dt>
+									<dt class="jp">住所</dt>
 									<dd>神奈川県鎌倉市山の上773-9</dd>
 								</div>
 								<div class="line">
-									<dt>TEL</dt>
-									<dd>000-123-4567</dd>
-								</div>
-								<div class="line">
-									<dt>TRAIN</dt>
+									<dt class="jp">最寄駅</dt>
 									<dd>JR横須賀線「北鎌倉駅」より徒歩5分</dd>
 								</div>
 								<div class="line">
-									<dt>OPEN</dt>
+									<dt class="jp">電話</dt>
+									<dd><a href="tel:000-123-4567" class="">000-123-4567</a></dd>
+								</div>
+								<div class="line">
+									<dt class="jp">営業時間</dt>
 									<dd>11:30～17:30(L.O. 16:30)</dd>
 								</div>
 								<div class="line">
-									<dt>CLOSED</dt>
+									<dt class="jp">定休日</dt>
 									<dd>金曜日</dd>
 								</div>
 							</dl>
 						</div>
 					</div>
-					<a href="" class="btn pc-hover">Google Map<img src="img/ex_link.svg" class="icon-link" alt="" /></a>
 				</div>
 			</section>
 		</main>
 		<footer>
 			<div class="inner">
+				<div class="footer-photo">
+					<picture>
+						<source type="image/webp" data-srcset="img/footer-kamakura_sp.webp 860w, img/footer-kamakura_pc.webp 1920w" sizes="100vw">
+						<img data-srcset="img/footer-kamakura_sp.jpg 860w, img/footer-kamakura_pc.jpg 1920w" sizes="100vw" data-src="img/footer-kamakura_pc.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="鎌倉の風景" class="lazyload" width="1920" height="960" />
+					</picture>
+				</div>
 				<div class="l-box">
 					<div class="f-logo logo">
 						<img src="img/logo.png" alt="喫茶ソラハナ" width="567" height="114" />
@@ -381,7 +399,7 @@
 							<a href="" class="pc-hover"><img src="img/instagram.svg" alt="" /></a>
 						</li>
 					</ul>
-					<p class="xs copyright">&copy;Sorahana All Rights Reserved.</p>
+					<p class="xs copyright font-wh">&copy;Sorahana All Rights Reserved.</p>
 				</div>
 				<a href="#top" id="btn-backtotop" class="pc-hover"><span class="arrow_up"></span></a>
 			</div>
