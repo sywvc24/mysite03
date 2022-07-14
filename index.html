@@ -12,10 +12,10 @@
 	<meta name="robots" content="noindex, nofollow" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Damion&family=Libre+Baskerville&family=Noto+Serif+JP:wght@500&display=swap" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Damion&family=Libre+Baskerville&family=Noto+Serif+JP:wght@500&display=swap" media="print" onload="this.media='all'" />
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Libre+Baskerville&family=Noto+Serif+JP:wght@500&display=swap" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Libre+Baskerville&family=Noto+Serif+JP:wght@500&display=swap" media="print" onload="this.media='all'" />
 	<noscript>
-		<link href="https://fonts.googleapis.com/css2?family=Damion&family=Libre+Baskerville&family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Libre+Baskerville&family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
 	</noscript>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.6/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'" />
 	<link href="css/style.min.css" rel="stylesheet" />
@@ -36,41 +36,47 @@
 		<header>
 			<div class="inner">
 				<h1 class="logo">
-					<img src="img/logo.png" alt="喫茶ソラハナ" width="567" height="114" />
+					<img src="img/header-logo-mark.svg" alt="喫茶ソラハナ" />
+					<img src="img/header-logo-text.svg" alt="喫茶ソラハナ" />
 				</h1>
 				<nav class="global-nav">
 					<div class="nav-inner">
-						<div class="logo menu-logo sp-only"><img src="img/logo.png" alt="喫茶ソラハナ" width="567" height="114" /></div>
+						<div class="nav-logo sp-only">
+							<img src="img/header-logo-mark.svg" alt="喫茶ソラハナ" />
+							<img src="img/nav-logo-text.svg" alt="喫茶ソラハナ" />
+						</div>
 						<ul id="indexList" class="vertical-txt">
 							<li>
-								<a href="#about" data-scroll class="jp pc-hover font-wh">コンセプト</a>
+								<a href="#about" data-scroll class="jp">コンセプト</a>
 							</li>
 							<li>
-								<a href="#menu" data-scroll class="jp pc-hover font-wh">メニュー</a>
+								<a href="#menu" data-scroll class="jp">メニュー</a>
 							</li>
 							<li>
-								<a href="#news" data-scroll class="jp pc-hover font-wh">ニュース</a>
+								<a href="#news" data-scroll class="jp">ニュース</a>
 							</li>
 							<li>
-								<a href="#access" data-scroll class="jp pc-hover font-wh">アクセス</a>
+								<a href="#access" data-scroll class="jp">アクセス</a>
 							</li>
 						</ul>
-						<div class="sns-block sp-only">
-							<p class="en font-wh">Folllow us!</p>
-							<ul>
-								<li>
-									<a href=""><img src="img/twitter.svg" alt="twitter" /></a>
-								</li>
-								<li>
-									<a href=""><img src="img/instagram.svg" alt="instagram" /></a>
-								</li>
+						<div class="gnav-sns-tel-area sp-only">
+							<div class="sns-block">
+								<p class="en">Folllow us!</p>
+								<ul>
+									<li>
+										<a href=""><img src="img/twitter-bk.svg" alt="twitter" /><span class="en small">Twitter</span></a>
+									</li>
+									<li>
+										<a href=""><img src="img/instagram-bk.svg" alt="instagram" /><span class="en small">Instagram</span></a>
+									</li>
+								</ul>
+							</div>
+							<ul class="gnav-menu-access">
+								<li><a href="tel:000-123-4567" class="btn-tel en">000-123-4567</a></li>
+								<li class="small">営業時間:11:30～17:30(L.O. 16:30)</li>
+								<li class="small">定休日:金曜日</li>
 							</ul>
 						</div>
-						<ul class="gnav-menu-access sp-only font-wh">
-							<li><a href="tel:000-123-4567" class="btn-tel font-wh en">000-123-4567</a></li>
-							<li class="small">営業時間:11:30～17:30(L.O. 16:30)</li>
-							<li class="small">定休日:金曜日</li>
-						</ul>
 					</div>
 				</nav>
 				<div class="hamburger sp-only" id="js-hamburger">
@@ -87,38 +93,29 @@
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<div class="slide-img">
-									<img srcset="
-												img/slider01_sp.jpg 1447w,
-												img/slider01_pc.jpg 1600w
-											" sizes="100vw" src="img/slider01_pc.jpg" alt="喫茶ソラハナの入り口" />
+									<img src="img/slider01.jpg" alt="喫茶ソラハナの窓辺" />
 								</div>
 								<div class="slide-content">
-									<h2 class="invisible jp">自然豊かな古民家で</h2>
-									<p class="invisible en">Nature</p>
+									<h2 class="invisible jp">自然豊かな古民家</h2>
+									<p class="invisible en xs">Nature</p>
 								</div>
 							</div>
 							<div class="swiper-slide">
 								<div class="slide-img">
-									<img srcset="
-												img/slider02_sp.jpg 1447w,
-												img/slider02_pc.jpg 1600w
-											" sizes="100vw" src="img/slider02_pc.jpg" alt="喫茶ソラハナの店内照明" />
+									<img src="img/slider02.jpg" alt="喫茶ソラハナのレトロな照明" />
 								</div>
 								<div class="slide-content">
-									<h2 class="invisible jp">レトロさと</h2>
-									<p class="invisible en">Nostalgia</p>
+									<h2 class="invisible jp">レトロな空間で</h2>
+									<p class="invisible en xs">Nostalgia</p>
 								</div>
 							</div>
 							<div class="swiper-slide">
 								<div class="slide-img">
-									<img srcset="
-												img/slider03_sp.jpg 1447w,
-												img/slider03_pc.jpg 1600w
-											" sizes="100vw" src="img/slider03_pc.jpg" alt="喫茶ソラハナの店内" />
+									<img src="img/slider03.jpg" alt="コーヒーカップ" />
 								</div>
 								<div class="slide-content">
 									<h2 class="invisible jp">ゆったりと流れる時間を</h2>
-									<p class="invisible en">Time goes by slowly and leisurely</p>
+									<p class="invisible en xs">Time goes by slowly and leisurely</p>
 								</div>
 							</div>
 						</div>
@@ -163,7 +160,7 @@
 			</section>
 			<section id="menu" class="section menu-news-anim">
 				<div class="inner">
-					<h2 class="ttl"><span class="jp">メニュー</span></h2>
+					<h2 class="ttl jp">メニュー</h2>
 					<div class="txt-box">
 						<p>
 							昭和レトロな喫茶店メニューと地元鎌倉野菜を使用したメニューです。
@@ -174,6 +171,80 @@
 							<li class="invisible waypoint img-anim js-height">
 								<div class="menu-img">
 									<picture>
+										<source type="image/webp" data-srcset="img/menu-pudding.webp" />
+										<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/menu-pudding.jpg" alt="自家製プリン" class="lazyload" width="670" height="474" />
+									</picture>
+								</div>
+								<div class="menu-txt">
+									<div class="txt-inner">
+										<dl>
+											<dt><span class="menu-name">自家製プリン</span></dt>
+											<dd class="small">450円</dd>
+											<dd>ほろ苦いカラメルの昔懐かしい固めのプリンです。</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+							<li class="invisible waypoint img-anim js-height">
+								<div class="menu-img">
+									<picture>
+										<source type="image/webp" data-srcset="img/menu-ft.webp" />
+										<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/menu-ft.jpg" alt="フレンチトースト" class="lazyload" width="670" height="474" />
+									</picture>
+								</div>
+								<div class="menu-txt">
+									<div class="txt-inner">
+										<dl>
+											<dt><span class="menu-name">フレンチトースト</span></dt>
+											<dd class="small">800円</dd>
+											<dd>
+												卵液、漬け込み時間、焼き方にこだわったとてもシンプルなフレンチトーストです。
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+							<li class="invisible waypoint img-anim js-height">
+								<div class="menu-img">
+									<picture>
+										<source type="image/webp" data-srcset="img/menu-napolitan.webp" />
+										<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/menu-napolitan.jpg" alt="ナポリタン" class="lazyload" width="670" height="474" />
+									</picture>
+								</div>
+								<div class="menu-txt">
+									<div class="txt-inner">
+										<dl>
+											<dt><span class="menu-name">ナポリタン</span></dt>
+											<dd class="small">1,000円</dd>
+											<dd>
+												喫茶店定番の懐かしい味です。太めのパスタを使って特製のトマトソースとケチャップで仕上げています。
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+							<li class="invisible waypoint img-anim js-height">
+								<div class="menu-img">
+									<picture>
+										<source type="image/webp" data-srcset="img/menu-curry.webp" />
+										<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/menu-curry.jpg" alt="鎌倉野菜のカレー" class="lazyload" width="670" height="474" />
+									</picture>
+								</div>
+								<div class="menu-txt">
+									<div class="txt-inner">
+										<dl>
+											<dt><span class="menu-name">鎌倉野菜のカレー</span></dt>
+											<dd class="small">1,200円</dd>
+											<dd>
+												スパイスの辛さは控えめな当店特製カレー。彩り豊かな鎌倉野菜の旨味の優しい味です。
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+							<li class="invisible waypoint img-anim js-height">
+								<div class="menu-img">
+									<picture>
 										<source type="image/webp" data-srcset="img/menu-coffee.webp" />
 										<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/menu-coffee.jpg" alt="オリジナルコーヒー" class="lazyload" width="670" height="474" />
 									</picture>
@@ -181,9 +252,7 @@
 								<div class="menu-txt">
 									<div class="txt-inner">
 										<dl>
-											<dt>
-												<span class="cursive">Coffee</span><br /><span>オリジナルコーヒー</span>
-											</dt>
+											<dt><span class="menu-name">オリジナルコーヒー</span></dt>
 											<dd class="small">600円〜</dd>
 											<dd>
 												おもてなしの心を、特別な一杯に乗せて。<br />
@@ -203,9 +272,7 @@
 								<div class="menu-txt">
 									<div class="txt-inner">
 										<dl>
-											<dt>
-												<span class="cursive">Ginger ale</span><br /><span>自家製ジンジャエール</span>
-											</dt>
+											<dt><span class="menu-name">自家製ジンジャエール</span></dt>
 											<dd class="small">650円</dd>
 											<dd>
 												生姜と唐辛子やスパイスを煮詰めて作った自家製のシロップで作ります。
@@ -214,91 +281,9 @@
 									</div>
 								</div>
 							</li>
-							<li class="invisible waypoint img-anim js-height">
-								<div class="menu-img">
-									<picture>
-										<source type="image/webp" data-srcset="img/menu-pudding.webp" />
-										<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/menu-pudding.jpg" alt="自家製プリン" class="lazyload" width="670" height="474" />
-									</picture>
-								</div>
-								<div class="menu-txt">
-									<div class="txt-inner">
-										<dl>
-											<dt>
-												<span class="cursive">Pudding</span><br /><span>自家製プリン</span>
-											</dt>
-											<dd class="small">450円</dd>
-											<dd>ほろ苦いカラメルの昔懐かしい固めのプリンです。</dd>
-										</dl>
-									</div>
-								</div>
-							</li>
-							<li class="invisible waypoint img-anim js-height">
-								<div class="menu-img">
-									<picture>
-										<source type="image/webp" data-srcset="img/menu-ft.webp" />
-										<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/menu-ft.jpg" alt="フレンチトースト" class="lazyload" width="670" height="474" />
-									</picture>
-								</div>
-								<div class="menu-txt">
-									<div class="txt-inner">
-										<dl>
-											<dt>
-												<span class="cursive">French toast</span><br /><span>フレンチトースト</span>
-											</dt>
-											<dd class="small">800円</dd>
-											<dd>
-												卵液、漬け込み時間、焼き方にこだわったとてもシンプルなフレンチトーストです。
-											</dd>
-										</dl>
-									</div>
-								</div>
-							</li>
-							<li class="invisible waypoint img-anim js-height">
-								<div class="menu-img">
-									<picture>
-										<source type="image/webp" data-srcset="img/menu-napolitan.webp" />
-										<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/menu-napolitan.jpg" alt="ナポリタン" class="lazyload" width="670" height="474" />
-									</picture>
-								</div>
-								<div class="menu-txt">
-									<div class="txt-inner">
-										<dl>
-											<dt>
-												<span class="cursive">Spaghetti Napolitana</span><br /><span>ナポリタン</span>
-											</dt>
-											<dd class="small">1,000円</dd>
-											<dd>
-												喫茶店定番の懐かしい味です。太めのパスタを使って特製のトマトソースとケチャップで仕上げています。
-											</dd>
-										</dl>
-									</div>
-								</div>
-							</li>
-							<li class="invisible waypoint img-anim js-height">
-								<div class="menu-img">
-									<picture>
-										<source type="image/webp" data-srcset="img/menu-curry.webp" />
-										<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/menu-curry.jpg" alt="鎌倉野菜のカレー" class="lazyload" width="670" height="474" />
-									</picture>
-								</div>
-								<div class="menu-txt">
-									<div class="txt-inner">
-										<dl>
-											<dt>
-												<span class="cursive">Curry</span><br /><span>鎌倉野菜のカレー</span>
-											</dt>
-											<dd class="small">1,200円</dd>
-											<dd>
-												スパイスの辛さは控えめな当店特製カレー。彩り豊かな鎌倉野菜の旨味の優しい味です。
-											</dd>
-										</dl>
-									</div>
-								</div>
-							</li>
 						</ul>
 					</div>
-					<a href="" class="btn pc-hover right-arrow"><span class="small">メニュー一覧を見る</span></a>
+					<div class="btn"><a href="">メニュー一覧を見る</a></div>
 				</div>
 			</section>
 			<section id="news" class="section menu-news-anim">
@@ -334,12 +319,12 @@
 								</div>
 								<div class="news-txt">
 									<p class="xs">2022.3.17</p>
-									<p class="news-title">ギャラリースペースにて写真展開催のお知らせ</p>
+									<p class="news-title">ギャラリースペースにて鎌倉在住フォトグラファーの写真展開催のお知らせ</p>
 								</div>
 							</a>
 						</article>
 					</div>
-					<a href="" class="btn pc-hover right-arrow"><span class="small">ニュース一覧を見る</span></a>
+					<div class="btn"><a href="">ニュース一覧を見る</a></div>
 				</div>
 			</section>
 			<section id="access" class="section">
@@ -390,14 +375,16 @@
 				<div class="footer-bottom">
 					<div class="l-box">
 						<div class="f-logo logo">
-							<img src="img/logo.png" alt="喫茶ソラハナ" width="567" height="114" />
+							<!-- <img src="img/logo.png" alt="喫茶ソラハナ" width="567" height="114" /> -->
+							<img src="img/footer-logo-mark.svg" alt="喫茶ソラハナ" />
+							<img src="img/footer-logo-text.svg" alt="喫茶ソラハナ" />
 						</div>
 						<ul class="f-sns">
 							<li>
-								<a href="" class="pc-hover"><img src="img/twitter.svg" alt="" /></a>
+								<a href="" class="pc-hover"><img src="img/twitter-wh.svg" alt="" /></a>
 							</li>
 							<li>
-								<a href="" class="pc-hover"><img src="img/instagram.svg" alt="" /></a>
+								<a href="" class="pc-hover"><img src="img/instagram-wh.svg" alt="" /></a>
 							</li>
 						</ul>
 						<p class="xxs copyright font-wh">&copy;Sorahana All Rights Reserved.</p>
